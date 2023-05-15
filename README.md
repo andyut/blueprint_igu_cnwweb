@@ -1,2 +1,7 @@
-# blueprint_igu_cnwweb
-blueprint_igu_cnwweb
+# Technical Blue Print
+# SAP B1 
+# CNW & SAP WEB
+
+---
+
+

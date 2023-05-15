@@ -8,7 +8,10 @@ copyright : "Copyright &copy; @2023 IT Indoguna Utama"
 # Copyright 
 output_path:  ict-indoguna.pdf
 nav: 
-    - Pengenalan : 'wms01.md' 
+    - SETUP & CONFIGURATION : 
+        - 'SETUP B1' : 'setup01.md' 
+        - 'SETUP SAP WEB' : 'setup02.md' 
+        - 'SETUP CNW' : 'setup03.md' 
 markdown_extensions:
   - abbr
   - admonition

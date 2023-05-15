@@ -1,0 +1,74 @@
+site_name: TECHNICAL BLUE PRINT FOR SAP B1 & APPLICATION ADDONS
+site_description : PT INDOGUNA UTAMA
+site_author : PT Indoguna Utama, IT Department 
+site_description: >-
+  Technical Blue print for SAP B1, SAP WEB, and CNW Portal  
+copyright : "Copyright &copy; @2023 IT Indoguna Utama"
+
+# Copyright 
+output_path:  ict-indoguna.pdf
+nav: 
+    - Pengenalan : 'wms01.md' 
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+theme : 
+    name : material
+    logo : asset/logocnw1.png
+    favicon : asset/logocnw2.png
+    palette:
+        scheme: default 
+plugins:
+    - search    
+    - mermaid2 
+    - pdf-export:
+        combined: false
+        media_type: print
+    - with-pdf: 
+        cover_subtitle: Indoguna Group Documentation
+        output_path: "../docs-wms.pdf"
+    - pandoc:
+        enabled_if_env: ENABLE_PANDOC_EXPORT
+        combile: true
+
+extra_css:
+    - css/extra.css        
+
